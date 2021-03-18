@@ -1,0 +1,146 @@
+html,body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    position: relative;
+    font-family: "Microsoft JhengHei";
+    font-weight: bolder;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFECEC;
+}
+.wrapper{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+}
+
+.title{
+    border: 1px solid #BEBEBE;
+    border-bottom: 0px;
+    text-align: center;
+    background-color: #9393FF;
+    color: #fff;
+}
+
+.content{
+    padding: 15px;
+    border: 1px solid #BEBEBE;
+    border-bottom: 0px;
+    background-color: #fff;
+}
+.add{
+    margin-bottom: 16px;
+    font-size: 18px;
+}
+label{
+    padding: 15px;
+}
+
+input{
+    width: 100px;
+    height: 25px;
+    padding: 2px 5px;
+    border: 1px solid #BEBEBE;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+input:focus{
+    outline: 0px;
+}
+
+.add-btn{
+    margin-left: 15px;
+    cursor: pointer;
+    background-color: #F00078;
+    color: #fff;
+    padding: 5px 20px;
+    border: 0px;
+    border-radius: 10px;
+    font-size: 16px;
+
+}
+
+.add-btn:hover{
+    background-color: #D9006C;
+    color: #ffffff;
+}
+
+.add-btn:focus{
+    outline: 0px;
+}
+
+hr{
+    height: 1px;
+    background-color: #999;
+}
+
+.list{
+    width: 100%;
+}
+
+.item{
+    height: 24px;
+}
+
+li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    padding-left: 20px;
+    border-bottom: 1px solid #BEBEBE;
+}
+
+li:nth-child(odd){background: #ECECFF;}
+li:nth-last-child(1){background-color: #9393FF;}
+
+.price{
+    padding: 5px 20px;
+    position: absolute;
+    right: 80px;
+}
+
+.price::before{
+    content: "$";
+}
+
+.delete-btn{
+    padding: 5px 10px;
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+}
+
+.delete-btn:hover{
+    background-color: #F00078;
+    border-radius: 100%;
+    color: #ffffff;
+}
+
+.total{
+    border: 1px solid #BEBEBE;
+    color: #fff;
+    margin: 15px -16px -15px -16px;
+    padding-left: 50px;
+}
+
+.total >.price{
+    margin-right: 15px;
+}
+
+.square{
+    width: 20px;
+    height: 20px;
+    background-color:#FF0080;
+    margin: 10px 0px;
+}
